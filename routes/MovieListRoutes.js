@@ -1,5 +1,4 @@
 const express = require('express');
-const bookListControllers = require('../controllers/bookListControllers');
 const fetch = require('node-fetch');
 const env = require('dotenv');
 const MovieList = require('../models/movieList');
