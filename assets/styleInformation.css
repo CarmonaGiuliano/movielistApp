@@ -1,0 +1,104 @@
+body{
+    margin: 0px
+  }
+  
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 50px;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  nav li{
+    position: relative;
+    list-style-type: none;
+  }
+  
+  #page{
+    
+    position: var(--position);
+    left: var(--left);
+    width: var(--width);
+    height: 800px;
+    border: 2px groove blue;
+  
+  }
+  
+  #above{
+    display: flex;
+    float: left;
+    background-color: #b2c9ed;
+  }
+
+  #header{
+    background-color: #b2c9ed;
+  }
+
+  
+  
+  #searchMovie{
+    position: relative;
+    float: right;
+    bottom:70px;
+    right:50px;
+  }
+  
+
+  #information{
+    position: relative;
+    right:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:900px
+  }
+ 
+  #title{
+    position: relative;
+    right:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:900px
+  }
+
+  
+  ul{
+    position: relative;
+    top: 40px;
+    right: 30px;
+    list-style-type: none;
+  }
+  
+  
+  #movielist li{
+    box-sizing: border-box;
+    padding-left: 2px;
+    border-left: lightseagreen;
+    border-left: solid;
+    margin:10px;
+    position: relative;
+    left:450px
+  }
+  
+
+   
+   #back{
+    position: relative;
+    top:40px;
+    right:63px
+  }
+
+  input{
+    background-color: #CDE7FD;
+    border-radius: 50px;
+    border-style: groove;
+  }
+  

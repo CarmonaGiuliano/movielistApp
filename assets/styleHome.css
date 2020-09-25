@@ -1,0 +1,54 @@
+
+  nav{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin: 20px;  
+    text-transform: uppercase;
+  }
+
+  nav a{
+   position: relative;
+   right:200px
+  }
+  
+#above{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #131313;
+}
+
+body{
+    background: url('./pictures/Screenshot from 2020-07-01 04-02-44.png') no-repeat;
+    margin: 0px
+  }
+  
+  #above h1{
+    position: relative;
+    text-align: center;
+    left:100px
+  }
+  
+  #above p{
+    position: relative;
+    text-align: center;
+    top:30px;
+    right: 300px;
+    margin:30px;
+  }
+
+
+  h5{
+    display: flex;
+    justify-content: center;
+  }
+
+  ul{
+    position: relative;
+    text-align: center;
+    list-style-type: none
+  }
+
+

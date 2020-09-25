@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <title>MOVIERAMA</title>
+  </head>
+  <body>
+     <div id="above">
+      <nav><ul>
+        <li><a href= '/auth/logout'>Logout</a></li>
+      </ul></nav>    
+        <h1>WELCOME <%= user.toUpperCase() %></h1>
+      </div>
+        <form id="searchMovie" action="/profile/movie/information">
+           <input type="text" name="search" value="" placeholder="Movies' Synopsis">
+        </form>
+     <div id="page">
+       <h4>Add Movies Into Your Wish List</h4>
+       <div id="middle">
+        <form id="addMovie" method="POST" action="/movie">
+            <input type="text" name="input" value="" placeholder="Add Movies">
+        </form>
+      </div>
+       <ul id="movielist">
+           <% movies.moviesTitles.forEach(function(movie){ %>
+            <br>
+            <li>
+              <span class="name"><%= movie.title %></span>
+              <button type="delete" name="delete">delete</button>
+            </li>
+            <% }); %>
+ 	    	</ul>
+   </div>
+  <script src="/assets/booklist.js" charset="utf-8"></script>
+  </body>
+</html>

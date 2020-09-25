@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <title>BOOKORAMA</title>
+  </head>
+  <body>
+    <nav><ul>
+      <li><a href= '/auth/logout'>Login</a></li>
+      <li><a href= '/auth/logout'>Logout</a></li>
+      <li><a href='/'>HOMEPAGE</a></li>
+    </ul></nav>
+     <div id="above">
+        <h1>BOOKORAMA</h1>
+        <p>Books for ninjas</p>
+        <form id="searchBook" method="POST" action="/book/:name">
+           <input type="text" name="search" value="" placeholder="Books's Synopsis">
+        </form>
+     </div>
+     <div id="page">
+       <h2>Books to Read</h2>
+       <ul id="booklist">
+           </li>
+           <% data.forEach(function(book){ %>
+            <br>
+            <li>
+              <span class="name"><%= book %></span>
+              <button type="delete" name="delete">delete</button>
+            </li>
+            <% }); %>
+ 	    	</ul>
+   </div>
+   <div id="bottom">
+      <form id="addBook" method="POST" action="/">
+          <input type="text" name="input" value="" placeholder="Add Books">
+          <button id="addButton" type="submit">ADD</button>
+      </form>
+  </div>
+  <script src="/assets/booklist.js" charset="utf-8"></script>
+  </body>
+</html>

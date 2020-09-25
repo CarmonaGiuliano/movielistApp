@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/styleInformation.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <title>MOVIERAMA</title>
+  </head>
+  <body>
+    <div id='header'>
+     <div id="above">
+      <nav><ul>
+        <li><a href= '/auth/logout'>Logout</a></li>
+        <li id='back'><a href= '/profile/movie'>Back</a></li>
+      </ul></nav>
+     </div>
+     <div id='information'>
+      <h1>Information about</h1>
+     </div>
+        <div id='title'>
+          <h2> <%=movie.title %></h2>
+        </div>  
+      <div id= 'searchBox'>
+        <form id="searchMovie" action="/profile/movie/information">
+           <input type="text" name="search" value="" placeholder="Movies' Synopsis">
+        </form>
+      </div>
+    </div>
+     <div id="page">
+       <ul id="movielist">
+            <li>Overview: <%=movie.overview %> </li>
+            <br>
+            <li>Status: <%=movie.status %> </li> 
+            <br>
+            <li>Release Date: <%=movie.release_date %></li>
+            <br>
+            <li>Original Language: <%=movie.original_language %> </li>
+            <br>
+            <li>Rating: <%=movie.rating %> </li>
+            <br>
+            <li>Runtime: <%=movie.runtime %></li>
+            <br>
+            <li>Cast: <%=movie.cast.slice(0,5) %> </li>
+            <br>
+            <li>Production: <%=movie.production.slice(0,5) %></li>
+            <br>
+            <li>Directing: <%=movie.directing.slice(0,5) %></li>
+            <br>
+            <li>Writing: <%=movie.writing.slice(0,5) %></li>
+            <br>
+            <li>Production Companies: <%=movie.production_companies.slice(0,5) %></li>
+           
+
+ 	    	</ul>
+   </div>
+  <script src="/assets/booklist.js" charset="utf-8"></script>
+  </body>
+</html>
