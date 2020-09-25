@@ -50,27 +50,6 @@ $('#searchMovie').on('submit', ()=>{
 
   });
 
-  /*
-
-  $('#searchMovie').on('submit', function(){
-
-    var searchInput = $('#searchMovie input');
-    var soughtMovie = {title: searchInput.val()};
-
-
-  $.ajax({
-        method: 'POST',
-        url: '/profile/movie/about/:' + searchInput.val(),
-        data: soughtMovie,
-        success: function(data){
-          //console.log(data)
-          location.pathname = '/profile/movie/about/:' + searchInput.val();
-        }
-      }).fail((error)=> alert(error.responseText));
-      return false;
-    });
-    
-*/
  
    var btn = $('button[type="delete"]');
    btn.on('click', function(e){
@@ -90,7 +69,7 @@ $('#searchMovie').on('submit', ()=>{
  
      });
      
- 
+ //another way
      /*
  
  optns = {
