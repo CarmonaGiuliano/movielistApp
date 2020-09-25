@@ -1,5 +1,5 @@
 var express = require('express');
-//const mongoose = require('mongoose');
+//const mongoose = require('mongoose'); I'm no longer using this module in this file
 const routes = require('./routes/MovieListRoutes');
 const authRoutes = require('./routes/auth-routes');
 const passportSetup = require('./services/passport-setup');
